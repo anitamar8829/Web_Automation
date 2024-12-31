@@ -35,13 +35,13 @@ jobs:
 
     # Step 5: Execute Tests
     - name: Run Tests
-      run: ./gradlew cucumber
+      run: ./gradlew WebRun
 
     - name: Archive test result
       uses: actions/upload-artifact@v4
       if: always()
       with:
        name: cucumber reports
-       path: target/cucumber-reports.html
+       path: reports/cucumber.html
  
   
