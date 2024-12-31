@@ -39,8 +39,8 @@ tasks.register('WebRun') {
             main = "io.cucumber.core.cli.Main"
             classpath = configurations.cucumberRuntime + sourceSets.main.output + sourceSets.test.output
             args = [
-                    '--plugin', 'html:reports/web/index.html',
-                    '--plugin', 'json:reports/web/index.json',
+                    '--plugin', 'html:reports/index.html',
+                    '--plugin', 'json:reports/index.json',
                     '--plugin', 'pretty',
                     '--glue', 'com.example.Saucedemo',
                     'src/test/resources/Features'
