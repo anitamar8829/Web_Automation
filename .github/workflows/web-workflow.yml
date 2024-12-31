@@ -42,6 +42,6 @@ jobs:
       if: always()
       with:
        name: cucumber reports
-       path: reports/cucumber.html
+       path: build/reports/tests/cucumber.html
  
   
